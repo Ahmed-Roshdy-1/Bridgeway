@@ -3,6 +3,6 @@
 </script>
 
 <template>
-  <h1 class="text-red-500">hello</h1>
+  <h1 class="text-bridgeway-lime">hello</h1>
 
 </template>

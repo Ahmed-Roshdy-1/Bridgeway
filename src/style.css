@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bridgeway-lime: #EEF36A;
+  --color-bridgeway-purple: #3F3047;
+  --color-bridgeway-blue: #5171A5;
+  --color-bridgeway-green: #9BC995;
+  --color-bridgeway-muted-purple: #6B5F73;
+  --color-bridgeway-gray: #E8F0EC;
+  --color-bridgeway-red: #9BC995;
+  --color-bridgeway-white: #ffffff;
+
+  --font-sans: "Inter", Arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-bridgeway-purple);
+}
