@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const socials = [
   { label: 'LinkedIn', href: '#' },
   { label: 'Facebook', href: '#' },

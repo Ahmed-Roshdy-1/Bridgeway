@@ -9,7 +9,7 @@ const features = [
     { icon: 'shield', title: 'Secure by default', description: 'Built-in fraud checks, encryption, and identity verification protect every payment.' },
     { icon: 'chart', title: 'Clear reporting', description: "Live dashboards show where your money is, what's settled, and what's pending." },
     { icon: 'code', title: 'Built for developers', description: 'Clean APIs, sandbox testing, and webhooks help your team ship in days, not months.' }
-]
+] as const
 </script>
 
 <template>
