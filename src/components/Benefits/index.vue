@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import FeatureCard from './FeatureCard.vue'
 
 // Single source of truth for the cards. Even index = dark card (gives the checker pattern on desktop too).
