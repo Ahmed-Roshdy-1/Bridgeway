@@ -1,11 +1,12 @@
-<script setup>
+<script setup lang="ts">
 import FeatureIcon from './FeatureIcon.vue'
-defineProps({
-    icon: String,
-    title: String,
-    description: String,
-    dark: Boolean
-})
+
+defineProps<{
+    icon: 'card' | 'sync' | 'payout' | 'shield' | 'chart' | 'code'
+    title: string
+    description: string
+    dark?: boolean
+}>()
 </script>
 
 <template>

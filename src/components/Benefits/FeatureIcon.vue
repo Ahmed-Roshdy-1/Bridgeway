@@ -1,6 +1,4 @@
-<script setup>
-/** Hand-drawn inline icons (no icon pack). Keys match `icon` in FeaturesSection. */
-defineProps({ name: { type: String, required: true } })
+<script setup lang="ts">
 const paths = {
     card: 'M3 6h18v12H3zM3 10h18M6 15h4',
     sync: 'M20 11a8 8 0 0 0-14-4M4 4v4h4M4 13a8 8 0 0 0 14 4m2 3v-4h-4',
@@ -9,6 +7,8 @@ const paths = {
     chart: 'M12 3a9 9 0 1 0 9 9h-9zM15 3a6 6 0 0 1 6 6h-6z',
     code: 'M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12'
 }
+
+defineProps<{ name: keyof typeof paths }>()
 </script>
 
 <template>
