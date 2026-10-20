@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "General Sans";
+  src: url("assets/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("assets/fonts/GeneralSans-VariableItalic.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: italic;
+}
+
+@theme {
+  --color-bridgeway-lime: #EEF36A;
+  --color-bridgeway-purple: #3F3047;
+  --color-bridgeway-blue: #5171A5;
+  --color-bridgeway-green: #9BC995;
+  --color-bridgeway-muted-purple: #6B5F73;
+  --color-bridgeway-gray: #E8F0EC;
+  --color-bridgeway-red: #9BC995;
+  --color-bridgeway-white: #ffffff;
+
+  --font-sans: "General Sans", "Inter", Arial, sans-serif;
+
+   --breakpoint-xs: 325px;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-bridgeway-purple);
+}
+
+.brands-marquee {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+}
+
+.brands-track {
+  animation: brands-slide-left 28s linear infinite;
+  will-change: transform;
+}
+
+@keyframes brands-slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brands-track { animation: none; }
+}
