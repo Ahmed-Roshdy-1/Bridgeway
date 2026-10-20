@@ -41,7 +41,7 @@
         <div class="flex  flex-col xs:flex-row items-center justify-between gap-4 mt-10 w-full px-4 mb-8">
             <img src="@/assets/images/hero-content.webp" alt="Hero Image" class="xl:hidden " />
             <button
-                class="flex items-center gap-2 static xl:absolute -bottom-5 right-0 z-50 bg-bridgeway-purple p-8 rounded-4xl text-start">
+                class="flex items-center gap-2 static xl:absolute top-155 right-0 z-50 bg-bridgeway-purple p-8 rounded-4xl text-start">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M36.0011 2V28C36.0011 28.5304 35.7904 29.0391 35.4153 29.4142C35.0403 29.7893 34.5315 30 34.0011 30C33.4707 30 32.962 29.7893 32.5869 29.4142C32.2118 29.0391 32.0011 28.5304 32.0011 28V6.8275L3.41611 35.415C3.04083 35.7903 2.53184 36.0011 2.00111 36.0011C1.47038 36.0011 0.961393 35.7903 0.586112 35.415C0.210831 35.0397 0 34.5307 0 34C0 33.4693 0.210831 32.9603 0.586112 32.585L29.1736 4H8.00111C7.47068 4 6.96197 3.78929 6.5869 3.41421C6.21183 3.03914 6.00111 2.53043 6.00111 2C6.00111 1.46957 6.21183 0.96086 6.5869 0.585787C6.96197 0.210714 7.47068 0 8.00111 0H34.0011C34.5315 0 35.0403 0.210714 35.4153 0.585787C35.7904 0.96086 36.0011 1.46957 36.0011 2Z"

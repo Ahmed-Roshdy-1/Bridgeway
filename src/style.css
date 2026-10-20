@@ -37,3 +37,24 @@ body {
   background-color: var(--color-background);
   color: var(--color-bridgeway-purple);
 }
+
+.brands-marquee {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+}
+
+.brands-track {
+  animation: brands-slide-left 28s linear infinite;
+  will-change: transform;
+}
+
+@keyframes brands-slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brands-track { animation: none; }
+}
