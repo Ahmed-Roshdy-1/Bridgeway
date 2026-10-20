@@ -25,6 +25,8 @@
   --color-bridgeway-white: #ffffff;
 
   --font-sans: "General Sans", "Inter", Arial, sans-serif;
+
+   --breakpoint-xs: 325px;
 }
 
 html {

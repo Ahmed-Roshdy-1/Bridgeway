@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import AppHero from '@/components/home/hero.vue';
 </script>
 
 <template>
-  <h1 class="text-bridgeway-lime">hello</h1>
+  <DefaultLayout>
+    <AppHero />
+
+
+  </DefaultLayout>
 
 </template>
