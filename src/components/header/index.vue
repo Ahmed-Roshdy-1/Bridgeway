@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BaseButton from '@/components/buttons/BaseButton.vue';
 </script>
 
 <template>
@@ -12,11 +13,11 @@
                 <nav class="block" aria-label="Main navigation">
                     <ul class="flex items-center gap-2 md:gap-8">
                         <li>
-                            <a href="#"
+                            <a href="#benefits"
                                 class="text-sm md:text-base transition-colors hover:text-bridgeway-lime focus-visible:text-bridgeway-lime">Benefits</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#contact"
                                 class="text-sm md:text-base transition-colors hover:text-bridgeway-lime focus-visible:text-bridgeway-lime">
                                 Contact Us
                             </a>
@@ -24,11 +25,7 @@
                     </ul>
                 </nav>
             </div>
-
-            <button type="button"
-                class="min-h-11 text-sm min-w-32 md:min-w-40 items-center justify-center gap-3 rounded-full bg-bridgeway-lime px-2 font-semibold text-black transition-colors cursor-pointer hover:text-white hover:bg-bridgeway-green hover:text-bridgeway-purple focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bridgeway-lime md:flex">
-                Get Started <span aria-hidden="true">→</span>
-            </button>
+            <BaseButton href="#contact">Get Started</BaseButton>
 
         </div>
 
